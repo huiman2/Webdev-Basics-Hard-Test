@@ -1,0 +1,173 @@
+/* Navbar */
+
+.box1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+    padding-bottom: 11.45em;
+}
+
+@media only screen and (max-width: 800px) {
+    .box1 {
+        padding-bottom: 6em;
+    }
+}
+
+.nav-item a, .container a {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.container a {
+    font-size: 21px;
+    padding-left: 10px;
+}
+
+.nav-item a {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-top: 135px;
+}
+
+.heading h1 {
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 1px;
+}
+
+.heading p {
+    font-size: 22px;
+    letter-spacing: 0.8px;
+}
+
+.navbar .navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* inverse hover effect of navbar-dark */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+ }
+
+/* Articles */
+
+.articles {
+    display: flex;
+    /* background-color: yellow; */
+}
+
+.boxleft, .boxright {
+    /* background-color: violet; */
+}
+
+.boxcenter {
+    max-width: 730px;
+    /* Puts button on right side */
+    display: flex;
+    flex-direction: column;
+    /* Minimizes column in flex box when out of bound */
+    min-width: 0;
+    overflow: hidden;
+}
+
+button {
+    margin-left: auto;
+}
+
+.articles > * {
+    flex: 1 1 auto;
+}
+
+.boxcenter hr {
+    margin-top: 12px;
+    width: 730px;
+}
+
+.boxleft, .boxcenter, .boxright {
+    margin-top: 48px;
+}
+
+.boxcenter h2{
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.boxcenter h3{
+    font-size: 32px;
+}
+
+.btn {
+    background-color: teal;
+    border-radius: 0;
+    color: white;
+    font-size: medium;
+    padding: 15px 26px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.hover:hover {
+    color: teal;
+    cursor: pointer;
+}
+
+.btn:hover {
+    filter: brightness(85%);
+    transition: all 0.3s ease;
+    color: white;
+}
+
+/* Footer */
+
+hr {
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content:center;
+}
+
+.fa-envelope, .fa-twitter, .fa-facebook-f, .fa-github {
+    font-size: 24px;
+    color: white;
+    padding-left: 14.2px;
+    padding-top: 14px;
+}
+
+.fa-facebook-f {
+    padding-left: 17px;
+}
+
+.circle {
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    background-color: black;
+}
+
+.circle:hover {
+    background-color: teal;
+}
+
+.box2 p {
+    font-size: 15px;
+}

@@ -179,6 +179,8 @@
 
 hr {
     margin-top: 0px;
+    border: none;
+    color: grey
 }
 
 .container {

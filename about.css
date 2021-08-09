@@ -1,14 +1,12 @@
 /* Navbar */
 
 .box1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80);
     background-attachment: scroll;
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    width: auto;
-    padding-bottom: 11.45em;
+    padding-bottom: 12em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -45,15 +43,31 @@
     padding-top: 135px;
 }
 
+.headingcenter {
+    max-width: 730px;
+    /* Puts button on right side */
+    display: flex;
+    flex-direction: column;
+    /* Minimizes column in flex box when out of bound */
+    min-width: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
 .heading h1 {
     font-weight: 800;
     font-size: 80px;
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
+
+}
+
+.heading h2 {
+    font-size: 26px;
+    letter-spacing: 0px;
 }
 
 .heading p {
-    font-size: 22px;
-    letter-spacing: 0.8px;
+    font-size: 20px;
 }
 
 .navbar .navbar-brand:hover {
@@ -63,7 +77,11 @@
 /* inverse hover effect of navbar-dark */
 .navbar-dark .navbar-nav .nav-link {
     color: white;
- }
+}
+
+.headingcenter a {
+    color: white;
+}
 
 /* Articles */
 
@@ -86,10 +104,7 @@
     /* Minimizes column in flex box when out of bound */
     min-width: 0;
     overflow: hidden;
-}
-
-button {
-    margin-left: auto;
+    margin-bottom: 36px;
 }
 
 .articles > * {
@@ -122,12 +137,7 @@ button {
     font-size: medium;
     padding: 15px 26px;
     margin-bottom: 15px;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.hover:hover {
-    color: teal;
+    margin-right: auto;
     cursor: pointer;
 }
 
@@ -137,10 +147,18 @@ button {
     color: white;
 }
 
+.writing p {
+    font-size: 20.8px;
+    line-height: 1.49;
+    margin-bottom: 30.5px;
+}
+
 /* Footer */
 
 hr {
     margin-top: 0px;
+    border: none;
+    color:grey;
 }
 
 .container {
@@ -172,14 +190,4 @@ hr {
 
 .box2 p {
     font-size: 15px;
-}
-
-a {
-    color: black;
-}
-
-a:hover {
-    color: teal;
-    cursor: pointer;
-    text-decoration: none;
 }

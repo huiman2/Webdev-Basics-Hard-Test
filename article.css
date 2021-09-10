@@ -175,6 +175,10 @@
     color: black;
 }
 
+.end a:hover {
+    color: teal;
+}
+
 /* Footer */
 
 hr {

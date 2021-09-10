@@ -13,7 +13,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark" [containerInside]="true">
                 <div class="container">
                     <!-- a tag before button so when minimized, hambuger is on right side of navbar -->
-                    <a class="navbar-brand pl-4" href="#">Clean Blog</a>
+                    <a class="navbar-brand pl-4" href="index.html">Clean Blog</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -30,7 +30,7 @@
                                 <a class="nav-link" href="posts.html">Posts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contract</a>
+                                <a class="nav-link" href="contact.html">Contract</a>
                             </li>
                         </ul>
                     </div>
@@ -107,6 +107,19 @@
             </div>
             <p class="text-center mt-4 mb-5 pb-4 text-secondary">Copyright &#169 Start Bootstrap 2021</p>
         </div>
+
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementBycl("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+              prevScrollpos = currentScrollPos;
+            }
+        </script>
     </body>
 </html>
 
